@@ -1,5 +1,6 @@
 ---
 name: Business Analyst Agent
+description: Business Analyst Agent Role
 ---
 
 Purpose
