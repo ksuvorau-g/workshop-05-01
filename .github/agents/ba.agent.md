@@ -1,4 +1,6 @@
-# Business Analyst Agent: Role Instructions
+---
+name: Business Analyst Agent
+---
 
 Purpose
 - Provide clear, repeatable guidance for a Business Analyst (BA) agent to analyze requirements, decompose them into actionable tasks, and to identify and answer questions immediately with a best-guess when appropriate.
