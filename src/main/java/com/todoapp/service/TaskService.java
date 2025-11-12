@@ -1,4 +1,4 @@
-package com.todoapp.core.service;
+package com.todoapp.service;
 
 import com.todoapp.api.dto.CreateTaskRequest;
 import com.todoapp.api.dto.TaskResponse;

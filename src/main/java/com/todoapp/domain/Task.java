@@ -1,4 +1,4 @@
-package com.todoapp.core.domain;
+package com.todoapp.domain;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

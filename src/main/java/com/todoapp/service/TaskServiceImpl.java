@@ -1,9 +1,9 @@
-package com.todoapp.core.service;
+package com.todoapp.service;
 
 import com.todoapp.api.dto.CreateTaskRequest;
 import com.todoapp.api.dto.TaskResponse;
-import com.todoapp.core.domain.Task;
-import com.todoapp.core.repository.TaskRepository;
+import com.todoapp.domain.Task;
+import com.todoapp.repository.TaskRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

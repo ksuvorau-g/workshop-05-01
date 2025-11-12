@@ -1,4 +1,4 @@
-package com.todoapp.core.domain;
+package com.todoapp.domain;
 
 /**
  * Task status enumeration.

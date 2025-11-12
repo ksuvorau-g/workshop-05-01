@@ -1,6 +1,6 @@
-package com.todoapp.core.repository;
+package com.todoapp.repository;
 
-import com.todoapp.core.domain.Task;
+import com.todoapp.domain.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.UUID;

@@ -30,7 +30,12 @@ docker run --name postgres-todo \
 
 2. Run the application:
 ```bash
-mvn spring-boot:run -pl todo-app
+mvn spring-boot:run
+```
+
+Or with dev profile (uses H2):
+```bash
+mvn spring-boot:run -Dspring-boot.run.profiles=dev
 ```
 
 The API will be available at `http://localhost:8080`
@@ -69,10 +74,23 @@ Response (201 Created):
 
 ```
 todo-management-backend/
-├── todo-api/         # API contracts and DTOs
-├── todo-core/        # Domain models, repositories, services
-├── todo-app/         # Spring Boot application, controllers
-└── pom.xml           # Parent POM
+├── src/
+│   ├── main/
+│   │   ├── java/com/todoapp/
+│   │   │   ├── api/dto/           # API contracts and DTOs
+│   │   │   ├── domain/            # Domain models
+│   │   │   ├── repository/        # Data access layer
+│   │   │   ├── service/           # Business logic
+│   │   │   ├── controller/        # REST controllers
+│   │   │   ├── exception/         # Exception handlers
+│   │   │   └── TodoApplication.java
+│   │   └── resources/
+│   │       ├── application.yml
+│   │       ├── application-dev.yml
+│   │       └── db/migration/      # Flyway migrations
+│   └── test/
+│       └── java/com/todoapp/
+└── pom.xml
 ```
 
 ## Technology Stack
@@ -88,7 +106,7 @@ todo-management-backend/
 
 ## Configuration
 
-Database configuration can be adjusted in `todo-app/src/main/resources/application.yml`:
+Database configuration can be adjusted in `src/main/resources/application.yml`:
 
 ```yaml
 spring:

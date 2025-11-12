@@ -2,10 +2,9 @@ package com.todoapp.service;
 
 import com.todoapp.api.dto.CreateTaskRequest;
 import com.todoapp.api.dto.TaskResponse;
-import com.todoapp.core.domain.Task;
-import com.todoapp.core.domain.TaskStatus;
-import com.todoapp.core.repository.TaskRepository;
-import com.todoapp.core.service.TaskServiceImpl;
+import com.todoapp.domain.Task;
+import com.todoapp.domain.TaskStatus;
+import com.todoapp.repository.TaskRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
