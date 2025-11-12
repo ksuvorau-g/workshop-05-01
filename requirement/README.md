@@ -48,25 +48,6 @@ Contains:
 
 ---
 
-### 3. [technical-specification.md](./technical-specification.md)
-**Detailed technical implementation guide**
-
-Contains:
-- System architecture and component design
-- Technology stack recommendations
-- Data models and API specifications
-- UI/UX specifications with layouts
-- Implementation details and algorithms
-- Security considerations
-- Testing strategy (unit, integration, e2e)
-- Deployment and CI/CD setup
-- Performance optimization techniques
-- Migration and upgrade strategies
-
-**Who should read this:** Developers, DevOps, Technical Architects, QA Engineers
-
----
-
 ## Document Summary
 
 ### Key Decisions and Assumptions
@@ -96,13 +77,7 @@ Based on the BA agent's best-guess methodology, the following key decisions were
 - **Assumption:** Storage cost negligible
 - **[BA QUESTION]** pending: Regulatory requirements?
 
-#### 5. **Framework: Vanilla JS or React**
-- **Confidence:** Medium
-- **Rationale:** Vanilla for simplicity, React for scalability
-- **Assumption:** Team has JavaScript expertise
-- **Recommendation:** Start vanilla, migrate if complexity grows
-
-#### 6. **Priority Levels: Three (Low/Medium/High)**
+#### 5. **Priority Levels: Three (Low/Medium/High)**
 - **Confidence:** High
 - **Rationale:** Standard practice, enough granularity for simple app
 - **Assumption:** Three levels sufficient for MVP
@@ -161,15 +136,13 @@ Based on the BA agent's best-guess methodology, the following key decisions were
 
 ### For Development Team
 1. Read **user-stories.md** for implementation tasks
-2. Reference **technical-specification.md** for implementation details
-3. Use stories as basis for sprint planning
-4. Follow Definition of Done for each story
+2. Use stories as basis for sprint planning
+3. Follow Definition of Done for each story
 
 ### For QA Team
 1. Review acceptance criteria in **user-stories.md**
 2. Use Gherkin scenarios to create test cases
-3. Reference testing strategy in **technical-specification.md**
-4. Validate both functional and non-functional requirements
+3. Validate both functional and non-functional requirements
 
 ### For Project Managers
 1. Use **requirements-analysis.md** for project planning
@@ -247,7 +220,6 @@ The following critical questions need stakeholder clarification:
 ### Document Owners
 - **requirements-analysis.md:** Business Analyst / Product Owner
 - **user-stories.md:** Product Owner / Scrum Master
-- **technical-specification.md:** Tech Lead / Architect
 
 ## Contact and Feedback
 
